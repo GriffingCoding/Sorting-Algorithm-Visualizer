@@ -1,0 +1,259 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* Clean, modern font */
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.app {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    min-width: 80rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Adds a card-like effect */
+    overflow: hidden;
+}
+
+.visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #fafafa;
+    width: calc(100% - 20rem);
+    /* Adjust width to fit layout */
+}
+
+canvas {
+    width: 100%;
+    height: auto;
+    max-height: 35rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    background-color: #eaf6ff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 1rem;
+}
+
+#controls button{
+    width: 8rem;
+}
+
+.speed-control,
+.size {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#speed {
+    width: 12rem;
+    appearance: none;
+    height: 8px;
+    background: #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin: 0.5rem;
+    transition: background 0.3s;
+}
+
+#speed::-webkit-slider-thumb {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#speed:hover {
+    background: #aaa;
+}
+
+#speed::-webkit-slider-thumb:hover {
+    background: #0056b3;
+}
+
+.size input {
+    font-size: 1rem;
+    width: 5rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.2rem;
+}
+
+/* Sidebar Styling */
+.left-side {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    width: 20rem;
+    padding: 1rem;
+    border-right: 1px solid #ddd;
+}
+
+nav {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* General Button Styling */
+button {
+    height: 3.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: scale(1.05);
+    /* Slight zoom on hover */
+}
+
+/* Unique Button Styles for Each Algorithm */
+button:nth-child(1) {
+    /* Bubble Sort */
+    background-color: #007bff;
+    color: white;
+}
+
+button:nth-child(1):hover {
+    background-color: #0056b3;
+}
+
+button:nth-child(2) {
+    /* Selection Sort */
+    background-color: #28a745;
+    color: white;
+}
+
+button:nth-child(2):hover {
+    background-color: #218838;
+}
+
+button:nth-child(3) {
+    /* Insertion Sort */
+    background-color: #ffc107;
+    color: white;
+}
+
+button:nth-child(3):hover {
+    background-color: #e0a800;
+}
+
+button:nth-child(4) {
+    /* Merge Sort */
+    background-color: #17a2b8;
+    color: white;
+}
+
+button:nth-child(4):hover {
+    background-color: #117a8b;
+}
+
+button:nth-child(5) {
+    /* Quick Sort */
+    background-color: #6f42c1;
+    color: white;
+}
+
+button:nth-child(5):hover {
+    background-color: #59359c;
+}
+
+button:nth-child(6) {
+    /* Heap Sort */
+    background-color: #fd7e14;
+    color: white;
+}
+
+button:nth-child(6):hover {
+    background-color: #e4600f;
+}
+
+button:nth-child(7) {
+    /* Shell Sort */
+    background-color: #dc3545;
+    color: white;
+}
+
+button:nth-child(7):hover {
+    background-color: #b02a37;
+}
+
+/* Header Styling */
+.top {
+    margin: 0 0 2rem 0;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #555;
+}
+
+.size-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#arraySize {
+    width: 12rem;
+    appearance: none;
+    height: 8px;
+    background: #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin: 0.5rem;
+    transition: background 0.3s;
+}
+
+#arraySize::-webkit-slider-thumb {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#arraySize:hover {
+    background: #aaa;
+}
+
+#arraySize::-webkit-slider-thumb:hover {
+    background: #0056b3;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}

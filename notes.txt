@@ -1,0 +1,20 @@
+when editing or creating new reminder or group or anything it provides a screen to the right
+side that has a smooth animation moving from right to left and opposite when exit
+
+middle screen will display reminders and groups actually it will dynamically change the title
+and display everything if nothing then state so
+
+account button also goes to middle screen... with editing available
+
+basically left is navigation middle is display and right is create/edit tasks/reminders
+
+create counters in left side categories
+
+allow for sub tasks????? nope thats for the groups
+
+
+search bar lists name matched task and when clicked, display in middle
+
+
+
+first step is allow to create tasks and put into the correct categories and list them off
