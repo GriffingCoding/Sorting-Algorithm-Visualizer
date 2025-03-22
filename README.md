@@ -28,21 +28,6 @@ A web-based **algorithm visualizer** that helps you understand how different sor
 - **Frontend:** React, JavaScript, CSS  
 - **State Management:** React hooks  
 
-## **Setup & Run**  
-1. Clone the repo:  
-   ```sh
-   git clone https://github.com/your-username/Algorithm-Visualizer.git
-   cd Algorithm-Visualizer
-   ```
-2. Install dependencies:  
-   ```sh
-   npm install
-   ```
-3. Run the app:  
-   ```sh
-   npm start
-   ```
-
 ## **Future Plans**  
 🔹 Add more algorithms (Heap Sort, Radix Sort, etc.)  
 🔹 Improve animations and UI  
